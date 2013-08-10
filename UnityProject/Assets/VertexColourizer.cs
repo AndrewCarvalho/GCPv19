@@ -15,7 +15,7 @@ public class VertexColourizer : MonoBehaviour {
 
         Mesh mesh = this.GetComponent<MeshFilter>().mesh;
 
-        Color32[] meshColours = mesh.colors32;
+        Color32[] meshColours = new Color32[mesh.vertexCount];
         for (int i = 0; i < mesh.vertexCount; i++)
         {
             meshColours[i] = this.colour;

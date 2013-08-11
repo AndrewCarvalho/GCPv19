@@ -3820,6 +3820,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a3077d21caeaded4abca16b46c90f9ab, type: 2}
+      propertyPath: nextSceneName
+      value: level_6_DoorFacingUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3077d21caeaded4abca16b46c90f9ab, type: 2}
   m_RootGameObject: {fileID: 1738053616}
@@ -6263,7 +6267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3708a7e90a0d9d145ac6a5965927fb36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: levelPrototype
+  nextSceneName: level_6_DoorFacingUp
 --- !u!65 &1738053619
 BoxCollider:
   m_ObjectHideFlags: 0

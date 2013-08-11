@@ -15,3 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/level_2_SimpleObstaclesHiddenDoor .unity
   - enabled: 1
     path: Assets/Scenes/level_4_DoorBehindStart.unity
+  - enabled: 1
+    path: Assets/Scenes/level_5_meancolumn.unity
+  - enabled: 1
+    path: Assets/Scenes/level_6_DoorFacingUp.unity

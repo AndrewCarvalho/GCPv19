@@ -3,39 +3,43 @@ using System.Collections;
 
 public class MovingPlatform : MonoBehaviour {
 	
-	public float maxY;
-	public float minY;
-	private float movingTo;
-	private float smooth = 1f;
-	private float errorMargin = 0.1f;
+	public Transform end;
+	private Vector3 start;
+	private Vector3 movingTo;
+	private float virtualZero = 0.1f;
+	public float stopTime;
+	private float stopCount = 0f;
 	
 	void Awake ()
 	{
-		minY += 0.5f;
-		movingTo = minY;
-		// move a little further down so that you can pick up the player on the way up.
+		start = transform.position;
+		movingTo = end.position;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		Vector3 position = transform.position;
-		position.y = Mathf.Lerp(position.y, movingTo, Time.deltaTime * smooth);
-		
-		if (position.y + errorMargin >= maxY)
+		if (stopCount <= 0)
 		{
-			position.y = maxY;
-			movingTo = minY;
-			Debug.Log("Moving down");
+			transform.position = Vector3.Lerp(transform.position, movingTo, Time.deltaTime); 
+			
+			float mag = (transform.position - movingTo).sqrMagnitude;
+			if (mag <= virtualZero)
+			{
+				stopCount = stopTime;
+				if (movingTo == end.position)
+				{
+					movingTo = start;
+				}
+				else if (movingTo == start)
+				{
+					movingTo = end.position;
+				}
+			}
 		}
-		
-		if (position.y - errorMargin <= minY)
+		else
 		{
-			position.y = minY;
-			movingTo = maxY;
-			Debug.Log("Moving up");
+			stopCount -= Time.deltaTime;
 		}
-		
-		transform.position = position;
 	}
 }

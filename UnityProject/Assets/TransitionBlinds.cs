@@ -33,8 +33,6 @@ public class TransitionBlinds : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        Debug.Log(this.slideState.ToString());
-
         Vector3 moveDistLeft;
 
         switch (this.slideState)

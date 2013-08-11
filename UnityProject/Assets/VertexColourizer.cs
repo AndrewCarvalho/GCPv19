@@ -13,7 +13,8 @@ public class VertexColourizer : MonoBehaviour {
     {
         Debug.Log("colour is " + this.colour.ToString());
 
-        Mesh mesh = this.GetComponent<MeshFilter>().mesh;
+        MeshFilter meshFilter = this.GetComponent<MeshFilter>();
+        Mesh mesh = meshFilter.mesh;
 
         Color32[] meshColours = new Color32[mesh.vertexCount];
         for (int i = 0; i < mesh.vertexCount; i++)
@@ -22,6 +23,8 @@ public class VertexColourizer : MonoBehaviour {
         }
 
         mesh.colors32 = meshColours;
+
+        meshFilter.renderer.material.shader = Shader.Find("Custom/VertexColoured");
 	}
 
     // Update is called once per frame

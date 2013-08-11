@@ -467,7 +467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colour:
     serializedVersion: 2
-    rgba: 4290888129
+    rgba: 4281545523
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colour:
     serializedVersion: 2
-    rgba: 12698049
+    rgba: 3355443
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colour:
     serializedVersion: 2
-    rgba: 12698049
+    rgba: 3355443
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colour:
     serializedVersion: 2
-    rgba: 12698049
+    rgba: 3355443
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1

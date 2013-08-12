@@ -11,6 +11,7 @@ public class PlayerPusher : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         this.myBody = this.GetComponent<Rigidbody>();
+        Screen.showCursor = false; 
 	}
 	
 	// Update is called once per frame

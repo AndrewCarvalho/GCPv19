@@ -6,8 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/levelPrototype.unity
-  - enabled: 1
     path: Assets/Scenes/level_1_SimpleObstacles.unity
   - enabled: 1
     path: Assets/Scenes/level_3_ramps.unity
@@ -21,3 +19,5 @@ EditorBuildSettings:
     path: Assets/Scenes/level_6_DoorFacingUp.unity
   - enabled: 1
     path: Assets/Scenes/level_7_elevator.unity
+  - enabled: 1
+    path: Assets/Scenes/levelPrototype.unity

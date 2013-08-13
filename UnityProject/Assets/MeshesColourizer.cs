@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MeshesColourizer : MonoBehaviour {
 
@@ -9,29 +10,34 @@ public class MeshesColourizer : MonoBehaviour {
     [SerializeField]
     private string shaderPath = "Custom/VertexColoured";
 
+    public string[] exclusions;
+
 	// Use this for initialization
 	void Awake () 
     {
-        Debug.Log("colour is " + this.colour.ToString());
-
+        //Debug.Log("colour is " + this.colour.ToString());
+        List<string> exclusionsList = new List<string>(exclusions);
         MeshFilter[] meshFilters = this.GetComponentsInChildren<MeshFilter>();
 
         foreach (MeshFilter meshFilter in meshFilters)
         {
-            Mesh mesh = meshFilter.mesh;
-
-            Color32[] meshColours = new Color32[mesh.vertexCount];
-            for (int i = 0; i < mesh.vertexCount; i++)
+            if (!exclusionsList.Contains(meshFilter.name))
             {
-                meshColours[i] = this.colour;
+                Mesh mesh = meshFilter.mesh;
+
+                Color32[] meshColours = new Color32[mesh.vertexCount];
+                for (int i = 0; i < mesh.vertexCount; i++)
+                {
+                    meshColours[i] = this.colour;
+                }
+
+                mesh.colors32 = meshColours;
+
+                meshFilter.renderer.material.shader = Shader.Find(this.shaderPath);
             }
-
-            mesh.colors32 = meshColours;
-
-            meshFilter.renderer.material.shader = Shader.Find(this.shaderPath);
         }
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	

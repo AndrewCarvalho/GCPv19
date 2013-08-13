@@ -2353,6 +2353,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 51200
   shaderPath: Custom/VertexColouredNoDepth
+  exclusions: []
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2368,6 +2369,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 51200
   shaderPath: Custom/VertexColouredNoDepth
+  exclusions: []
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2443,7 +2445,7 @@ MonoBehaviour:
     movementTransfer: 2
   sliding:
     enabled: 1
-    slidingSpeed: 1
+    slidingSpeed: 0
     sidewaysControl: 1
     speedControl: .400000006
 --- !u!114 &11400010

@@ -26,8 +26,8 @@ public class ExitingPlayer : MonoBehaviour {
 
     public void OnTriggerEnter(Collider collider)
     {
-        Debug.Log("trigger enter");
-        blinds.SetStateClose(new TransitionBlinds.OnTransitionComplete(this.changeScene));
+        if (collider.name == "exit")
+            blinds.SetStateClose(new TransitionBlinds.OnTransitionComplete(this.changeScene));
     }
 
     private void changeScene()

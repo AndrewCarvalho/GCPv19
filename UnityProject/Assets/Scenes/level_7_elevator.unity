@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3708a7e90a0d9d145ac6a5965927fb36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: levelPrototype
+  nextSceneName: level_8_Wheel
 --- !u!65 &636691764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1640,9 +1640,9 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 6
-    maxSidewaysSpeed: 6
-    maxBackwardsSpeed: 6
+    maxForwardSpeed: 10
+    maxSidewaysSpeed: 10
+    maxBackwardsSpeed: 10
     slopeSpeedMultiplier:
       serializedVersion: 2
       m_Curve:
@@ -1678,7 +1678,7 @@ MonoBehaviour:
     movementTransfer: 2
   sliding:
     enabled: 1
-    slidingSpeed: 10
+    slidingSpeed: 1
     sidewaysControl: 1
     speedControl: .400000006
 --- !u!114 &672247521
@@ -4221,6 +4221,10 @@ Prefab:
     - target: {fileID: 400006, guid: a3077d21caeaded4abca16b46c90f9ab, type: 2}
       propertyPath: m_LocalRotation.w
       value: -4.37113883e-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a3077d21caeaded4abca16b46c90f9ab, type: 2}
+      propertyPath: nextSceneName
+      value: level_8_Wheel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3077d21caeaded4abca16b46c90f9ab, type: 2}

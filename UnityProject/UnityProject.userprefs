@@ -2,12 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayerPusher.cs">
     <Files>
+      <File FileName="Assets\PlayerPusher.cs" Line="1" Column="1" />
       <File FileName="Assets\MeshesColourizer.cs" Line="1" Column="1" />
       <File FileName="Assets\RemoveGravity.cs" Line="1" Column="1" />
       <File FileName="Assets\RotateWorld.cs" Line="1" Column="1" />
       <File FileName="Assets\MovingPlatform.cs" Line="1" Column="1" />
       <File FileName="Assets\ExitingPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlayerPusher.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

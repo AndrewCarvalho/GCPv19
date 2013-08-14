@@ -29,7 +29,7 @@ public class PlayerPusher : MonoBehaviour {
 
         if (body.isKinematic)
         {
-            if (body.GetComponent<RotatingQuad>() != null)
+            if (body.GetComponent<Rotate>() != null)
             {
                 Debug.Log("heyheyhey");
 

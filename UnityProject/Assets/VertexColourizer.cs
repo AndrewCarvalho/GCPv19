@@ -6,12 +6,12 @@ public class VertexColourizer : MonoBehaviour {
     [SerializeField]
     private Color32 colour;
 
-    private bool set = false;
+    //private bool set = false;
 
 	// Use this for initialization
 	void Awake () 
     {
-        Debug.Log("colour is " + this.colour.ToString());
+        //Debug.Log("colour is " + this.colour.ToString());
 
         MeshFilter meshFilter = this.GetComponent<MeshFilter>();
         Mesh mesh = meshFilter.mesh;
